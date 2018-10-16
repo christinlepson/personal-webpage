@@ -1,0 +1,43 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+    &--second {
+        margin-left: 15px;
+        @include mq(medium) {
+            margin-left: 30px;
+        }
+    }
+    &-turqoise {
+        @extend %btn;
+        background-color: $turqoise;
+        color: #FFFFFF;
+        &:hover {
+            color: $turqoise;
+            border-color: $turqoise;
+            background-color: transparent; 
+        }
+    }
+    &-mint {
+        @extend %btn;
+        background-color: $mint;
+        color: #FFFFFF;
+        &:hover {
+            color: $mint;
+            border-color: $mint;
+            background-color: transparent; 
+        }
+    }
+    &-navy {
+        @extend %btn;
+        background-color: transparent;
+        color: $navy;
+        border-color: navy;
+        &:hover {
+            color: #FFFFFF;
+            background-color: $navy; 
+        }
+    }
+}
+

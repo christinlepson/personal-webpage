@@ -1,0 +1,31 @@
+// ==========================================================================
+// Headlines
+// ==========================================================================
+
+.headline {
+
+	&-primary {
+		margin-bottom: em(50px);
+        font-size: em(27px);
+        color: #FFFFFF;
+		@include mq(medium) {
+            margin-bottom: em(60px);
+            font-size: em(34px);
+        }
+        @include mq(large) {
+            font-size: em(38px);
+        }
+	}
+
+ 	&-secondary {
+		@extend %hdln-sec;
+		margin-bottom: em(22px, 24px);
+
+		@include m(grouped) {
+			@extend %hdln-sec;
+			margin-top: em(10px, 24px);
+	 		margin-bottom: em(54px, 24px);
+		}		
+	}
+
+}

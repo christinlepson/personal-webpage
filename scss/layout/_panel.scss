@@ -1,0 +1,89 @@
+// ==========================================================================
+// Panels
+// ==========================================================================
+
+.panel {
+	@extend %center-align;
+	@extend %panel-padding;
+    &-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include mq(medium) {
+            flex-direction: row;
+        }
+    }
+    &-work {
+        background-image: -webkit-linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
+        background-image: -o-linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
+        background-image: linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
+        }
+}
+
+.container {
+    @include m(hero) {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/bg-hero.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        width:100%;
+        min-height: 525px;
+         height:100%;
+         &-items {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+         }
+    }
+}
+
+header {
+    text-align: center;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio {
+    max-width: 700px;
+    @include mq(medium) {
+        margin-left: 40px;
+    }
+    @include mq(large) {
+        margin-left: 70px;
+    }
+}
+
+.gallery-work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: $margin-mobile auto;
+    @include mq(medium) {
+        margin: $margin-tablet auto;
+    }
+    @include mq(large) {
+        margin: $margin-desktop auto;
+    }
+    /* Work Gallery Items*/
+    @include e(item) {
+        width: 240px;
+        height: 230px;
+        background: #000;
+        margin-bottom: em(52px);
+        @include doubly(em(52px));
+    }
+}

@@ -1,0 +1,50 @@
+// ==========================================================================
+// Images
+// ==========================================================================
+
+.img {
+	@include m(wrap) {
+		border: 1px solid palette(grey, x-light);
+		padding: em(12px);
+	}
+	@include m(avatar) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: $br--round;
+		@include mq(medium) {
+			margin-top: em(24px);
+		}
+	}
+	@include m(hero) {
+		@include mq(medium) {
+			margin-bottom: em(42px);
+		}
+	}
+    @include m(profile) {
+        max-width: 150px;
+        margin: 0 auto;
+        @include mq(medium) {
+            max-width: 215px;
+        }
+        @include mq(large) {
+            max-width: 300px;
+            margin: 0;
+        }
+    }
+    @include m (hello) {
+        max-width: 200px;
+        @include mq(medium) {
+            max-width: 250px;
+        }
+    }
+}
+
+.logo {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-bottom: em(15px);
+    @include mq(medium) {margin-bottom: em(24px);}
+    @include mq(large) {margin-bottom: em(40px);}
+}
