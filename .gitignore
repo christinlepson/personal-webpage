@@ -3,6 +3,7 @@
 
 # misc
 /final-design
+/portfolio-design
 .DS_Store
 .env.local
 .env.development.local
