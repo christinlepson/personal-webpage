@@ -29,3 +29,24 @@
 	}
 
 }
+
+.header {
+    @include m(lined) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before, &:after {
+            flex: 1;
+            content: '';
+            height: 2px;
+            max-width: 260px;
+            background: rgba(48, 74, 150, 0.45);
+        }
+
+        & img {
+            @extend %zoom;
+            margin: 0 3em;
+        }
+
+    }
+}

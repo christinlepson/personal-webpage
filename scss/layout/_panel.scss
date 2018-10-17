@@ -15,9 +15,7 @@
         }
     }
     &-work {
-        background-image: -webkit-linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
-        background-image: -o-linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
-        background-image: linear-gradient(#F1F6FF 0%, #C2D5FE 100%);
+        background-color: #F4F4F4;
         }
 }
 
@@ -70,7 +68,7 @@ header {
 .gallery-work {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     margin: $margin-mobile auto;
     @include mq(medium) {
         margin: $margin-tablet auto;
@@ -80,10 +78,28 @@ header {
     }
     /* Work Gallery Items*/
     @include e(item) {
-        width: 240px;
-        height: 230px;
+        @extend %zoom;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 400px;
+        height: 390px;
         background: #000;
-        margin-bottom: em(52px);
-        @include doubly(em(52px));
+        margin: em(38px);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.20);
+        &:hover {
+            box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+        }
+
+        & span {
+            font-size: 1.2em;
+            width: 100%;
+            background: $navy;
+            color: $white;
+            padding: 20px 0;
+        }
+
     }
 }
