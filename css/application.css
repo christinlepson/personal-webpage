@@ -367,6 +367,9 @@ footer {
 .panel-work {
   background-color: #F4F4F4; }
 
+.panel-skills {
+  background-image: linear-gradient(-180deg, #F1F6FF 0%, #96B8FE 100%); }
+
 .container--hero {
   display: flex;
   flex-direction: column;
@@ -422,8 +425,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 400px;
-    height: 390px;
+    width: 360px;
+    height: 350px;
     background: #000;
     margin: 2.375em;
     background-position: center;
@@ -452,7 +455,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
   font-size: 1.5em;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.form__btn, .btn-turqoise, .btn-mint, .btn-navy {
+.form__btn, .btn-turqoise, .btn-mint, .btn-navy, .btn-charcoal {
   padding: 10px 0px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 2em;
@@ -464,12 +467,12 @@ h2, .headline-secondary, .headline-secondary--grouped {
   display: block;
   width: 7.5em; }
   @media (min-width: 768px) {
-    .form__btn, .btn-turqoise, .btn-mint, .btn-navy {
+    .form__btn, .btn-turqoise, .btn-mint, .btn-navy, .btn-charcoal {
       width: 11.875em; } }
 
-.gallery-work__item, .header--lined img {
+.zoom, .gallery-work__item {
   transition: all .2s ease-in-out; }
-  .gallery-work__item:hover, .header--lined img:hover {
+  .zoom:hover, .gallery-work__item:hover {
     transform: scale(1.05); }
 
 .menu__link, .menu__link--end {
@@ -605,6 +608,14 @@ h2, .headline-secondary, .headline-secondary--grouped {
   .btn-navy:hover {
     color: #FFFFFF;
     background-color: #304A96; }
+
+.btn-charcoal {
+  background-color: #3C3B3B;
+  color: #fff; }
+  .btn-charcoal:hover {
+    color: #3C3B3B;
+    background-color: transparent;
+    border-color: #3C3B3B; }
 
 .navbar {
   width: 100%;

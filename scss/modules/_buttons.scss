@@ -29,6 +29,7 @@
             background-color: transparent; 
         }
     }
+
     &-navy {
         @extend %btn;
         background-color: transparent;
@@ -39,5 +40,17 @@
             background-color: $navy; 
         }
     }
+
+    &-charcoal {
+        @extend %btn;
+        background-color: $charcoal;
+        color: $white;
+        &:hover {
+            color: $charcoal;
+            background-color: transparent; 
+            border-color: $charcoal;
+        }
+    }
+
 }
 
