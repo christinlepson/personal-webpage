@@ -23,7 +23,7 @@
 	}
     @include m(profile) {
         max-width: 150px;
-        margin: 0 auto;
+        margin: 20px auto;
         @include mq(medium) {
             max-width: 215px;
         }
@@ -32,12 +32,17 @@
             margin: 0;
         }
     }
-    @include m (hello) {
+    @include m(hello) {
         max-width: 200px;
         @include mq(medium) {
             max-width: 250px;
         }
     }
+
+    @include m(skill) {
+        max-height: 75px;
+    }
+
 }
 
 .logo {
