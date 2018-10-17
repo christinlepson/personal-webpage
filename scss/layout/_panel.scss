@@ -47,6 +47,10 @@
         justify-content: center;
         align-items: center;
 
+        @include mq(small) {
+            justify-content: space-evenly;
+        }
+
         @include e(item) {
             margin: 20px;
             display: flex;

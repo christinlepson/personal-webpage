@@ -391,6 +391,9 @@ footer {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 1px) and (max-width: 767px) {
+    .container--skills {
+      justify-content: space-evenly; } }
   .container--skills__item {
     margin: 20px;
     display: flex;
