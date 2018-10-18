@@ -40,11 +40,23 @@
             content: '';
             height: 2px;
             max-width: 260px;
+            margin: 0 1.5em;
             background: rgba(48, 74, 150, 0.45);
+
+            @include mq(small) {
+                display: none;
+            }
+
+        }
+
+        @include e(contact) {
+            &:before, &:after {
+                background: rgba(255, 255, 255, 0.45);
+            }
         }
 
         & img {
-            margin: 0 3em;
+            margin: 1em auto;
         }
 
     }

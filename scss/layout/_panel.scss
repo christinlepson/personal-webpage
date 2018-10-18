@@ -20,6 +20,9 @@
     &-skills {
         background-image: linear-gradient(-180deg, #F1F6FF 0%, #C2D5FE 100%);
     }
+    &-contact {
+        background-image: linear-gradient(-180deg, #304A96 0%, #000000 100%);
+    }
 }
 
 .container {
@@ -73,6 +76,18 @@
 
         & span {
             margin-top: 5px;
+        }
+
+    }
+
+    @include m(contact) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+            color: $white;
         }
 
     }

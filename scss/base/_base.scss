@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-	@extend %hdln-sec;
+    @extend %hdln-sec;
 }
 
 h3 {
@@ -109,9 +109,11 @@ button {
 // Footer
 
 footer {
-	border-top: 1px solid palette(grey, xx-light);
-	p {
-		font-size: em(16px);
-		margin-top: em(22px, 16px);
+    margin: em(40px) auto;
+    width: 100%;
+	a {
+        color: $white;
+        margin: 0 em(10px);
+		font-size: em(80px);
 	}
 }

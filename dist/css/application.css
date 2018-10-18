@@ -286,10 +286,12 @@ button {
   outline: 0; }
 
 footer {
-  border-top: 1px solid #ebecec; }
-  footer p {
-    font-size: 1em;
-    margin-top: 1.375em; }
+  margin: 2.5em auto;
+  width: 100%; }
+  footer a {
+    color: #fff;
+    margin: 0 0.625em;
+    font-size: 5em; }
 
 .panel {
   padding: 1.25em 1.5625em; }
@@ -370,6 +372,9 @@ footer {
 .panel-skills {
   background-image: linear-gradient(-180deg, #F1F6FF 0%, #C2D5FE 100%); }
 
+.panel-contact {
+  background-image: linear-gradient(-180deg, #304A96 0%, #000000 100%); }
+
 .container--hero {
   display: flex;
   flex-direction: column;
@@ -411,6 +416,14 @@ footer {
       align-items: center; }
   .container--skills span {
     margin-top: 5px; }
+
+.container--contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container--contact > * {
+    color: #fff; }
 
 header {
   text-align: center;
@@ -476,11 +489,10 @@ h1 {
   margin-top: 0; }
 
 h2, .headline-secondary, .headline-secondary--grouped {
-  color: #999da1;
+  color: #fff;
   letter-spacing: 1px;
   font-weight: 100;
-  font-size: 1.5em;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-size: 1.75em; }
 
 .form__btn, .btn-turqoise, .btn-mint, .btn-navy, .btn-charcoal {
   padding: 10px 0px;
@@ -587,9 +599,15 @@ h2, .headline-secondary, .headline-secondary--grouped {
     content: '';
     height: 2px;
     max-width: 260px;
+    margin: 0 1.5em;
     background: rgba(48, 74, 150, 0.45); }
+    @media (min-width: 1px) and (max-width: 767px) {
+      .header--lined:before, .header--lined:after {
+        display: none; } }
+  .header--lined__contact:before, .header--lined__contact:after {
+    background: rgba(255, 255, 255, 0.45); }
   .header--lined img {
-    margin: 0 3em; }
+    margin: 1em auto; }
 
 .form__label {
   display: block;
@@ -647,6 +665,12 @@ h2, .headline-secondary, .headline-secondary--grouped {
     background-color: transparent;
     border-color: #3C3B3B; }
 
+.btn-contact {
+  padding: 15px 0px;
+  width: 11.25em;
+  font-size: 1.5em;
+  margin-top: 1.25em; }
+
 .navbar {
   width: 100%;
   height: 2.1875em;
@@ -686,12 +710,18 @@ h2, .headline-secondary, .headline-secondary--grouped {
   margin-left: auto;
   margin-top: 35px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 25%; }
   .nav--social a {
     color: #000000;
     padding: 0.5em 1.25em; }
+
+.nav--footer {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .icon--github:hover {
   color: #860082; }
