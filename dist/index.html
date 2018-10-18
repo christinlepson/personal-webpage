@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webfonts/ss-social-regular.css">
     <link rel="stylesheet" href="css/application.css">
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <div class="container--hero">
+    <div id="hero" class="container--hero">
         <nav class="navbar">
             <ul class="nav--main">
                 <li class="is-hidden-mobile">
@@ -66,12 +74,14 @@
                     <a class="btn--second btn-mint" href="work.html">Work</a>
                 </div>
             </div>
-            <div class="arrow"></div>
+            <a href="#bio">
+                <div class="arrow"></div>
+            </a>
         </header>
     </div>
     <div class="panel panel-about">
          <img class="img--profile is-hidden-mobile" src="img/me.png">
-        <div class="bio">
+        <div id="bio" class="bio">
             <img class="img--hello" src="img/hello.png">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante at erat euismod ornare. Cras tincidunt nibh non varius laoreet. Nam aliquet felis eu odio posuere eleifend. Sed sit amet vestibulum massa. Nulla maximus tincidunt malesuada. Etiam tempor tincidunt massa in mollis. Sed tincidunt tempor imperdiet. Aenean massa metus, lobortis quis volutpat malesuada, gravida ut sem.
@@ -241,6 +251,7 @@
                                     </a>
                             </li>
                         </ul>
+                        <a class="btn-back-to-top btn-white-reverse centered" href="#hero">Back to Top</a>
             </footer>
     </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
