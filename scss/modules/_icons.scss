@@ -22,6 +22,11 @@
     -ms-transform-origin: bottom left;
     -o-transform-origin: bottom left;
     transform-origin: bottom left;
+
+    @include m(link) {
+        padding: 10px;
+    }
+
 }
 
 .arrow.arrowDown {

@@ -292,6 +292,9 @@ footer {
     color: #fff;
     margin: 0 0.625em;
     font-size: 5em; }
+    @media (min-width: 1px) and (max-width: 767px) {
+      footer a {
+        margin: 0 0.3125em; } }
 
 .panel {
   padding: 1.25em 1.5625em; }
@@ -367,7 +370,7 @@ footer {
       flex-direction: row; } }
 
 .panel-work {
-  background-image: linear-gradient(-180deg, #C2D5FE 0%, #F1F6FF 100%); }
+  background-image: radial-gradient(50% 100%, #FFFFFF 50%, #F4F4F4 100%); }
 
 .panel-skills {
   background-image: linear-gradient(-180deg, #F1F6FF 0%, #C2D5FE 100%); }
@@ -509,9 +512,9 @@ h2, .headline-secondary, .headline-secondary--grouped {
     .form__btn, .btn-turqoise, .btn-mint, .btn-navy, .btn-charcoal, .btn-white-reverse {
       width: 11.875em; } }
 
-.zoom, .gallery-work__item {
+.zoom, .gallery-work__item, .img--skill {
   transition: all .2s ease-in-out; }
-  .zoom:hover, .gallery-work__item:hover {
+  .zoom:hover, .gallery-work__item:hover, .img--skill:hover {
     transform: scale(1.05); }
 
 .menu__link, .menu__link--end {
@@ -808,6 +811,8 @@ h2, .headline-secondary, .headline-secondary--grouped {
   -ms-transform-origin: bottom left;
   -o-transform-origin: bottom left;
   transform-origin: bottom left; }
+  .arrow--link {
+    padding: 10px; }
 
 .arrow.arrowDown {
   margin-top: 41px; }

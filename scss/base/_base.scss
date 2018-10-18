@@ -114,6 +114,11 @@ footer {
 	a {
         color: $white;
         margin: 0 em(10px);
-		font-size: em(80px);
+        font-size: em(80px);
+        
+        @include mq(small) {
+            margin: 0 em(5px);
+        }
+
 	}
 }
