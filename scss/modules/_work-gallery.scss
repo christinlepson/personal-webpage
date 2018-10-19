@@ -1,0 +1,52 @@
+.gallery-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $margin-mobile auto;
+    @include mq(medium) {
+        margin: $margin-tablet auto;
+    }
+    @include mq(large) {
+        margin: $margin-desktop auto;
+    }
+    /* Work Gallery Items*/
+    @include e(item) {
+        @extend %zoom;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 360px;
+        height: 350px;
+        background: #000;
+        margin: em(38px);
+        background-color: $white;
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.20);
+        &:hover {
+            box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+        }
+
+        & div.project--card {
+            width: 100%;
+            background: $navy;
+            color: $white;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & span.project--title {
+            font-size: 1.2em;
+        }
+
+        & span.project--desc {
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+    }
+}
