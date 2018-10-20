@@ -114,10 +114,11 @@ footer {
 	a {
         color: $white;
         margin: 0 em(10px);
-        font-size: em(80px);
+        font-size: 5em;
         
         @include mq(small) {
             margin: 0 em(5px);
+            font-size: 2em;
         }
 
 	}

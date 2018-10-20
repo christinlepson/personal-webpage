@@ -24,6 +24,13 @@
         background-size: contain;
         background-repeat: no-repeat;
         box-shadow: 0 3px 5px rgba(0,0,0,0.20);
+
+        @include mq(small) {
+            width: 318px;
+            height: 308px;
+            margin: em(20px) 0;
+        }
+
         &:hover {
             box-shadow: 0 5px 10px rgba(0,0,0,0.25);
         }

@@ -303,7 +303,8 @@ footer {
     font-size: 5em; }
     @media (min-width: 1px) and (max-width: 767px) {
       footer a {
-        margin: 0 0.3125em; } }
+        margin: 0 0.3125em;
+        font-size: 2em; } }
 
 .panel {
   padding: 1.25em 1.5625em; }
@@ -403,11 +404,12 @@ footer {
     .container--skills {
       justify-content: space-evenly; } }
   .container--skills__item {
-    margin: 20px;
+    margin: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    max-width: 33%; }
     .container--skills__item div {
       border: 5px solid #fff;
       background: #fff;
@@ -831,6 +833,11 @@ h2, .headline-secondary, .headline-secondary--grouped {
     background-size: contain;
     background-repeat: no-repeat;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+    @media (min-width: 1px) and (max-width: 767px) {
+      .gallery-work__item {
+        width: 318px;
+        height: 308px;
+        margin: 1.25em 0; } }
     .gallery-work__item:hover {
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
     .gallery-work__item div.project--card {

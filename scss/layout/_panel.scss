@@ -46,11 +46,12 @@
         }
 
         @include e(item) {
-            margin: 20px;
+            margin: 20px 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            max-width: 33%;
 
             & div {
                 border: 5px solid $white;
