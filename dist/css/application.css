@@ -391,7 +391,7 @@ footer {
   .container--hero-items {
     display: flex;
     flex-direction: column;
-    margin-top: auto; }
+    margin: auto; }
 
 .container--skills {
   margin: 50px auto;
